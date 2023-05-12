@@ -1,0 +1,188 @@
+* {
+    font-family: 'Quicksand', 'Alegreya', sans-serif, serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(/images/output-onlinepngtools.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+#gradient-canvas {
+    width: 100%;
+    height: 30%;
+    --gradient-color-1: #2f0452;
+    --gradient-color-2: #5e04a8;
+    --gradient-color-3: #4f0abe;
+    --gradient-color-4: #8c00ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main-header {
+    height: 20vh;
+    color: white;
+    padding: 0 5%;
+    text-align: center;
+}
+
+header h1,
+header p {
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 7vh;
+}
+
+main {
+    padding: 5vh 0 9vh 0;
+}
+
+.player-info {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    background-color: transparent;
+    margin: 1.67vmax;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h3,
+.info span {
+    margin: 0.21vmax;
+    font-size: 1.67vmax;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comp {
+    color: black;
+    font-size: 1.67vmax;
+    font-weight: 700;
+    display: none;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    width: 25vmax;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.67vmax;
+}
+
+button {
+    height: 6vmax;
+    width: 6vmax;
+    border-radius: 1.04vmax;
+    font-size: 2.5vmax;
+    background-color: rgb(240, 240, 240);
+}
+
+.announce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.67vmax;
+    font-weight: 700;
+}
+
+.announce p {
+    margin: 3px;
+}
+
+#winner {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    position: absolute;
+    bottom: 0;
+}
+
+footer a svg {
+    height: 100%;
+    width: 5vh;
+    margin-right: 0.5vw;
+}
+
+@media (max-width: 1023px) {
+    body {
+        height: 80vh;
+        background-position: center;
+    }
+
+    .info {
+        margin: 2vmax;
+    }
+
+    .info h3,
+    .info span {
+        margin: 0.7vmax;
+        font-size: 2.9vmax;
+    }
+
+    .info span {
+        font-weight: 700;
+    }
+
+    .comp {
+        font-size: 3vmax;
+    }
+
+    .boxes {
+        width: 40vmax;
+    }
+
+    button {
+        height: 10vmax;
+        width: 10vmax;
+        font-size: 4vmax;
+    }
+
+    .announce {
+        font-size: 3vmax;
+    }
+
+    footer a svg {
+        width: 4vh;
+    }
+
+    header h1 {
+        font-size: 4vmax;
+    }
+
+    header p {
+        font-size: 2vmax;
+    }
+}
